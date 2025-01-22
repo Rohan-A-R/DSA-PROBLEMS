@@ -83,12 +83,6 @@ def find_min(node):
 
 # Example Usage
 root = delete(root, 70)
-# The tree structure after deleting 70:
-#         50
-#        /  \
-#      30    80
-#     / \   /
-#   20  40 60
-
+inorder_traverssel(root)
 
 
