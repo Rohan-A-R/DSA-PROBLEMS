@@ -20,7 +20,8 @@ def Valid_paranthisi(s):
     return not stack
 
 s = "[{()}]"
-print(Valid_paranthisi(s))
+print(Valid_paranthisi(s)) 
+
 
 
 
