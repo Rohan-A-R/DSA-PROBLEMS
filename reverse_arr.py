@@ -1,5 +1,5 @@
-result=[]
 def reverse(arr):
+    result=[]
     for i in range(len(arr)):
         result.insert(0,arr[i])
     return result
