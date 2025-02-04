@@ -1,6 +1,30 @@
 # Reverse a singly linked list.
+class Node:
+    def __init__(self,val):
+        self.data=val
+        self.next=None
 
-new1={1,2,3,4}
-new1.add(5)
+    def reverse_linkedlist(self,head):
+        prev=None
+        current=head
+        while current:
+            next_node=current.next
+            current.next=prev
+            prev=current
+            current=next_node
+        return prev
 
-print(new1)
+#  count the number of nodes in the reversed linked list.
+def reverse_and_count(head):
+    prev=None
+    current=head
+    count=0
+    while current:
+        next_node=current.next
+        current.next=prev
+        prev=current
+        current=next_node
+        count+=1
+    return prev,count
+
+        

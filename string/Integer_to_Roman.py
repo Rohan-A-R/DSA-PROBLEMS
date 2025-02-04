@@ -28,9 +28,10 @@ def convert_to_roman_2nd_method(n):
     roman=""
     for value,symbol in values:
         count=n//value
+       
         roman+=symbol*count
         n%=value
     return roman
-n=232
+n=2500
 print(convert_to_roman_2nd_method(n))
 
