@@ -243,7 +243,8 @@ my_dog = Dog(name="Buddy", age=3)
 print(my_dog.name)  # Output: Buddy
 print(my_dog.age)   # Output: 3
 
-30 In Python, super() is a built-in function that is commonly used in the context of inheritance and object-oriented programming. It is used to call a method from the parent class within a subclass. The super() function is particularly useful \
+30 In Python, super() is a built-in function that is commonly used in the context of inheritance and object-oriented programming.
+It is used to call a method from the parent class within a subclass. The super() function is particularly useful \
 when you want to extend the behavior of a method defined in the parent class without completely replacing it.
 class ChildClass(ParentClass):
     def some_method(self, arg1, arg2, ...):
