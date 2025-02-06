@@ -28,6 +28,15 @@ def cycle_hash(head):
         current=current.next
     return False
 
+# optimal soulution
 
+def cycle_optimal(head):
+    slow,fast=head,head
+    while fast and fast.next:
+        slow=slow.next
+        fast=fast.next.next
+        if slow==fast:
+            return True
+    return False
 
         
