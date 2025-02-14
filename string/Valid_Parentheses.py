@@ -12,6 +12,7 @@ def Valid_paranthisi(s):
         elif char in hash_map:
             if not stack or stack[-1]!=hash_map[char]:
                 return False
+            print(hash_map[char])
             stack.pop()
 
         else:
