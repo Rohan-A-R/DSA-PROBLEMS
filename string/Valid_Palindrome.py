@@ -14,5 +14,5 @@ def valid_palindrome(s):
     return True
 
 
-s = "race a car"
+s = "12121"
 print(valid_palindrome(s))

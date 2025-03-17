@@ -1,37 +1,25 @@
-class student:
-    def __init__(self,name,age,grade):
-        self.name=name
-        self.age=age
-        self.grade=grade
+class Employee:
 
-    def get_grade(self):
-        return self.grade
+    raise_amt = 1.04
+
+    def __init__(self, first, last, pay):
+        self.first = first
+        self.last = last
+        self.email = first + '.' + last + '@email.com'
+        self.pay = pay
+
+    def fullname(self):
+        return '{} {}'.format(self.first, self.last)
+
+    def apply_raise(self):
+        self.pay = int(self.pay * self.raise_amt)
+
+    # def __repr__(self):
+    #     return "Employee('{}','{}',{})".format(self.first,self.last,self.pay)
     
-class Course:
-    def __init__(self,name,max_students):
-        self.name=name
-        self.max_students=max_students
-        self.students=[]
+    def __str__(self):
+        return '{} - {}'.format(self.fullname(),self.email)
 
-    def add_student(self,student):
-        if len(self.students)<self.max_students:
-            self.students.append(student)
-            return True
-        return False
-    
-    def get_average_grade(self):
-        value=0
-        for student in self.students:
-            value +=student.get_grade()   
-        return value/len(self.students)
+emp1=Employee('rohan','ar',200)
 
-s1=student("Rohan",22,98)
-s2=student("sahil",22,95)
-s3=student("thrishul",22,99)
-
-course=Course("Science",2)
-course.add_student(s1)
-course.add_student(s2)
-
-print(course.get_average_grade())
-
+print(emp1)

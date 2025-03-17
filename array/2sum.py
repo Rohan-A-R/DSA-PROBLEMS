@@ -11,7 +11,7 @@ arr=[16]
 target=16
 print(two_sum(arr,target))
 
-# 2 pointers
+# 2 pointers arr should be sorted
 
 def two_sum_pointer(arr,target):
     arr.sort()
