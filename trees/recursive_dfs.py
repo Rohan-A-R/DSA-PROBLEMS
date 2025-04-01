@@ -26,4 +26,4 @@ def postorder(root):
 
 root = TreeNode(1, TreeNode(2, TreeNode(4), TreeNode(5)), TreeNode(3))
 print("Preorder Traversal: ")
-preorder(root)  # Output: 1 2 4 5 3
+preorder(root)  

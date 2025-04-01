@@ -14,5 +14,5 @@ def valid_palindrome(s):
     return True
 
 
-s = "12121"
+s = "ara"
 print(valid_palindrome(s))

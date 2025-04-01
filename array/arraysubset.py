@@ -6,5 +6,5 @@ def array_subset(m,n):
     return True
 
 a = [11, 7, 1, 13, 21, 3, 7, 3] 
-b= [11, 3, 7, 1, 7,8]
+b= [11, 3, 7, 1, 7]
 print(array_subset(a,b))

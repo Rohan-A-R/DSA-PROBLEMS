@@ -18,7 +18,7 @@ def find_method(arr):
         else:
             return n
         
-arr=[1, 2, 3, 5]
+arr=[ 3, 5,6]
 print(find_method(arr))
 
 

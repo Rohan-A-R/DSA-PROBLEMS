@@ -4,7 +4,6 @@ def array_leades(arr):
     leader.append(max_number)
     n=len(arr)
     for i in range(n-2,-1,-1):
-        print(i)
         if arr[i]>=max_number:
             leader.append(arr[i])
             max_number=arr[i]
