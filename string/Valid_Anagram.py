@@ -10,7 +10,6 @@ def Valid_Anagram(s,t):
     for c in count1:
         if count1[c]!=count2.get(c,0):
             return False
-        
     return True
 
 s1 ="geeks"

@@ -1,6 +1,7 @@
 class Solution:
     def reverseWords(s):
       string=s.split()
+      print(string)
       result=string[::-1]
       return ' '.join(result)
     

@@ -4,7 +4,7 @@ def string(arr,target):
             return i
     return False
 
-arr='rohan'
+arr='rohan is good'
 target=str(input('enter the string'))
 
 print(string(arr,target))
