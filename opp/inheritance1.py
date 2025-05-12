@@ -49,15 +49,14 @@ dev_2=Developer('roith','s',1200,'java')
 mgr_1=Manager('sue','smith',2000,[dev_1])
 
 
-print(isinstance())
 
-# print(mgr_1.email)
-# mgr_1.add_emp(dev_2)
+print(mgr_1.email)
+mgr_1.add_emp(dev_2)
 
-# mgr_1.print_emp()
+mgr_1.print_emp()
 
-# # print(dev_1.email)
-# # print(dev_1.prog_lang)
-# # print(dev_1.pay)
-# # dev_1.apply_raise()
-# # print(dev_1.pay)
+# print(dev_1.email)
+# print(dev_1.prog_lang)
+# print(dev_1.pay)
+# dev_1.apply_raise()
+# print(dev_1.pay)
