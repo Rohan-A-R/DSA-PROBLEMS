@@ -10,14 +10,14 @@ print(findMissingNumber(arr))
 
 # method 2
 
-def find_method(arr):
-    n=len(arr)
-    while n>=0:
-        if n in arr:
-            n-=1
-        else:
-            return n
-        
+def findMissingNumber_Set(arr):
+    n = len(arr) + 1
+    nums_set = set(arr)
+    
+    for i in range(1, n + 1):
+        if i not in nums_set:
+            return i
+
 
 
 

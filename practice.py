@@ -11,7 +11,7 @@ class BankAccount:
 
 account = BankAccount(100)
 account.deposit(50)
-print(account.get_balance())  # Output: 150
+# print(account.get_balance())  # Output: 150
 
 # Trying to access __balance directly will raise an AttributeError:
 print(account.__balance)  # Uncommenting this will cause an error.

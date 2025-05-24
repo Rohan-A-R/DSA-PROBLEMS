@@ -23,7 +23,7 @@ account=BankAccount("rohan",500)
 
 print(account.owner)  #public
 
-print(account._account_number)  # protected bot not recomrndded
+print(account._account_number)  # protected but not recomrndded
 
 #using methods to modify private data
 
