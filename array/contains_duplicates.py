@@ -6,6 +6,7 @@ def duplicate(arr):
         if num in seen:
             return True
         seen.add(num)
+        print(seen)
     return False
 arr=[1,2,3,8,7,1]
 
