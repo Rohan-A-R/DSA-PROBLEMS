@@ -18,3 +18,4 @@ def print_linked_list(head):
     while current:
         print(current.val, end=" -> " if current.next else "\n")
         current = current.next
+

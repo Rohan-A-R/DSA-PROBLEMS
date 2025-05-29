@@ -1,13 +1,13 @@
 def removeDups(str1):
-	arr=set()
-	res=""
+	arr = set()
+	res = ""
 	for num in str1:
 		if num not in arr:
-		    arr.add(num)
-		    res+=num
+			arr.add(num)
+			res += num
 	return res
 
 
-new="roohan"
+new = "roohan"
 print(removeDups(new))
 
