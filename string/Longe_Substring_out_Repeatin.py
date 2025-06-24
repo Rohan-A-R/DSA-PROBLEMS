@@ -37,3 +37,21 @@ def longest_unique_substring_with_result(s):
 
 s = "geeksforgeeks"
 print(longest_unique_substring_with_result(s))  
+
+
+# bruteforce
+def brute_force(s):
+    max_sum=0
+    for i in range(len(s)):
+        arr=set()
+        for j in range(i,len(s)):
+            if s[j] in arr:
+                break
+            arr.add(s[j])
+            max_sum=max(max_sum,j-i+1)
+
+    return max_sum
+
+s = "geeksforgeeksabcdefghjkl"
+print(brute_force(s))
+
