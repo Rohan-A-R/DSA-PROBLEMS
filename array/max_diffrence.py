@@ -14,4 +14,4 @@ def max_diffrence(arr):
 
     return result
 
-print(max_diffrence([2,1,3,4,5,7]))
+print(max_diffrence([2,3,4,4,5,7,2,10]))
