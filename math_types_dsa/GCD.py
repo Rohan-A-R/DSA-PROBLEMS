@@ -55,6 +55,6 @@ def find_arr(arr):
             return 1
     return Result
 
-arr1 = [2, 4, 6]
+arr1 = [2,5,6,9,10]
 
 print(find_arr(arr1))
