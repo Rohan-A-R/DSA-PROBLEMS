@@ -5,7 +5,6 @@ def brute_force(arr):
     for i in range(n):
         product=1
         for j in range(i,n):
-            print(i,j)
             product=product*arr[j]
             max_sub=max(max_sub,product)
     return max_sub

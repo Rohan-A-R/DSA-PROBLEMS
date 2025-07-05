@@ -11,7 +11,7 @@ def search_and_insert(arr,target):
     return low
 
 arr=[1,5,8,9,15,17,18,21,25]
-target=17
+target=40
 
 print(search_and_insert(arr,target))
 

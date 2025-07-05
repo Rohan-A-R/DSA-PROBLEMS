@@ -12,5 +12,5 @@ def unique_accurence(arr):
 
 
 
-arr=[1,1,1,2,2,3,3]
+arr=[2,2,1]
 print(unique_accurence(arr))

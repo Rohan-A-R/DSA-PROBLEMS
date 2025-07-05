@@ -15,6 +15,6 @@ def in_between(arr):
     return result
 
 
-arr=[2,4,6,1,8,5]
+arr=[2,4,6,1,8,5,5,5]
 
 print(in_between(arr))

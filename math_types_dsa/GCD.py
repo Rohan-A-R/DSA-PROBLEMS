@@ -6,7 +6,7 @@ def gcd(a,b):
     return a
 
 
-print(gcd(56,98))
+print(gcd(56,91))
 
 
 # recursive approch

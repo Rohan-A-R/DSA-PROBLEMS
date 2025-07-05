@@ -24,6 +24,6 @@ def equi(arr):
 
 
 
-arr=[1,2,0,3]
+arr=[1,7,3,6,5,6]
 
 print(equlibrim(arr))
