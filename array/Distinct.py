@@ -1,8 +1,9 @@
 class Solution:
 	def common_digits(self, nums):
 		digit=set()
-		for i in str(nums):
-			digit.add(int(i))
+		for num in nums:
+			for i in str(num):
+				digit.add(int(i))
 		return digit
 	
 sol = Solution()
