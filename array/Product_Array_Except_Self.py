@@ -8,10 +8,10 @@ def Product_Array_Except_Self(arr):
 
     for i in range(1,n):
         prefix[i]=prefix[i-1]*arr[i-1]
+    
 
     for i in range(n-2,-1,-1):
         sefix[i]=sefix[i+1]*arr[i+1]
-
     for i in range(n):
         res[i]=prefix[i]*sefix[i]
 

@@ -1,0 +1,32 @@
+from collections import Counter
+def minWindow(s,t):
+        count_t=Counter(t)
+        window={}
+        need=len(count_t)
+        have=0
+        max_len=float("inf")
+        res=""
+        left=0
+        for right in range(len(s)):
+            char=s[right]
+            window[char]=1+window.get(char,0)
+            if char in count_t and window[char]==count_t[char]:
+                have+=1
+            
+            while have == need:
+                window_len=right-left+1
+                if window_len<max_len:
+                    max_len=window_len
+                    res=s[left:right+1]
+                char_left=s[left]
+                window[char_left]-=1
+                if char_left in count_t and window[char_left]<count_t[char_left]:
+                    have-=1
+                left+=1
+        return res
+    
+    
+    
+s = "ADOBECODEBANC"
+t = "ABC"
+print(minWindow(s,t))
