@@ -13,6 +13,6 @@ def brute_force(arr,target):
             j-=1
     return [-1,-1]
 
-arr=[]
+arr=[2,1,2,1,1]
 Target=1
 print(brute_force(arr,Target))

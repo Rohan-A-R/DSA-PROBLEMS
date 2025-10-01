@@ -34,3 +34,19 @@ def mergeArrays(self, a, b):
                 break
         a.sort()
         b.sort()
+        
+        
+def merege(arr1,arr2):
+    m=len(arr1)
+    n=len(arr2)
+    last=m+n-1
+    i=j=0
+    while i<m and j<n:
+        if arr1[i]<arr2[j]:
+            arr1[last]=arr1[i]
+            i+=1
+        else:
+            arr2[last]=arr2[j]
+            j+=1
+        last+=1
+        

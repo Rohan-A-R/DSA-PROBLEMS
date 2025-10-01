@@ -17,15 +17,16 @@ def sub_arr_sum1(arr,k):
     hash_map={0:-1}
     prefix_sum=0
     for i,num in enumerate(arr):
+        print(hash_map)
         prefix_sum+=num
         rem=prefix_sum%k
         if rem in hash_map:
             if i-hash_map[rem]>2:
                 return True
         else :
-            hash_map[num]=i
+            hash_map[rem]=i
     return False
-arr=[23,4,6,7]
+arr=[23,2,4,6,7]
 k=6
 print(sub_arr_sum1(arr,k))
         

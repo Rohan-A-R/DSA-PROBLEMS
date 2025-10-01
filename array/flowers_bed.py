@@ -8,5 +8,5 @@ def flowers_bed(arr,n):
 
 
 arr=[1,0,0,0,1]
-n=2
+n=1
 print(flowers_bed(arr,n))
